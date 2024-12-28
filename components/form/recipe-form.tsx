@@ -139,7 +139,7 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
               </Button>
             ) : (
               <Button type="submit" size="lg" className="w-full font-semibold">
-                Generate recipe
+                Generate pSEO Strategy
                 <Icons.generate className="ml-2 size-4" aria-hidden="true" />
               </Button>
             )}{" "}
