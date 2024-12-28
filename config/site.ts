@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Chef Genie",
+  name: "pSEO AI Agent",
   url: "https://chef-genie.app",
   ogImage: "https://chef-genie.app/og.png",
   description: "An open-source recipe generator powered by OpenAi and ChatGPT.",
