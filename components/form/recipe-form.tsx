@@ -93,7 +93,7 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
                     </Slider>
                   </FormControl>
                   <FormDescription className="flex flex-row-reverse">
-                    🕛 {field.value} minutes
+                    🕛 {field.value} landing pages
                   </FormDescription>
                 </FormItem>
               )}
