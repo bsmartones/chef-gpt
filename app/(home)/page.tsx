@@ -15,13 +15,13 @@ export default async function IndexPage() {
       <PageHeader>
         <RecipesCounter />
         <PageHeaderHeading>
-          Say goodbye to mealtime indecision with
+          Say goodbye to manual SEO Strategy crafting with
           <span className="bg-gradient-to-r from-violet-500 to-teal-300 bg-clip-text text-transparent">
-            {" Chef Genie"}
+            {" pSEO AI Agent"}
           </span>
         </PageHeaderHeading>
         <PageHeaderDescription>
-          Free. Open Source. Recipe generator powered by OpenAI and ChatGPT.
+          Programmatic SEO. On Autopilot. Strategy, Data, Templates, Workflows. Ready to Scale.
         </PageHeaderDescription>
       </PageHeader>
       <GenerateRecipe />
