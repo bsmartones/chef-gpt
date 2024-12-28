@@ -49,13 +49,13 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
               {showAdditionalFields && (
                 <RecipeFormLabel
                   stepIndex="1"
-                  labelIndex="What ingredients are in your arsenal?"
+                  labelIndex="Describe your business, services/products & industry"
                 />
               )}
               <FormControl>
                 <div className="relative">
                   <Input
-                    placeholder="Broccoli, Potatoes, Rice"
+                    placeholder="Law Firm, specialized in Labor Law"
                     {...field}
                     onClick={() => setShowAdditionalFields(true)}
                     className="rounded-xl bg-primary text-secondary shadow-lg placeholder:text-secondary/70"
@@ -76,7 +76,7 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
                 <FormItem className="space-y-3">
                   <RecipeFormLabel
                     stepIndex="2"
-                    labelIndex="How much time can you spare?"
+                    labelIndex="How many pages do you want to generate?"
                   />
                   <FormControl>
                     <Slider
@@ -101,7 +101,7 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
             <FormItem>
               <RecipeFormLabel
                 stepIndex="3"
-                labelIndex="How many hungry souls?"
+                labelIndex="What is your business type?"
               />
               <RadioGroupFormField
                 form={form}
@@ -112,22 +112,22 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
             <FormItem>
               <RecipeFormLabel
                 stepIndex="4"
-                labelIndex="Are you the master of the kitchen domain?"
+                labelIndex="What is your expert level?"
               />
               <SelectFormField form={form} name="difficulty" />
             </FormItem>
             <FormItem>
               <RecipeFormLabel
                 stepIndex="5"
-                labelIndex="Any specific preferences for your feast?"
+                labelIndex="Any specific preferences for your campaign?"
               />
               <SwitchFormField
                 form={form}
                 name="low_calori"
-                label="⚖️ Low Cal"
+                label="⚖️ Competitor Keywords"
               />
-              <SwitchFormField form={form} name="vegan" label="🌿 Vegan" />
-              <SwitchFormField form={form} name="paleo" label="🍖 Paleo" />
+              <SwitchFormField form={form} name="vegan" label="🌿 Low Difficulty (Quick Wins)" />
+              <SwitchFormField form={form} name="paleo" label="🍖 Full Coverage" />
             </FormItem>
             {isLoading ? (
               <Button disabled size="lg" className="w-full font-semibold">
@@ -135,7 +135,7 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
                   className="mr-2 size-4 animate-spin"
                   aria-hidden="true"
                 />
-                Generating recipe
+                Generating pSEO Strategy
               </Button>
             ) : (
               <Button type="submit" size="lg" className="w-full font-semibold">
