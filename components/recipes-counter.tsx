@@ -9,7 +9,7 @@ interface CountDisplayProps {
 function CountDisplay({ count }: CountDisplayProps) {
   return (
     <p className="duration-1200 inline-flex items-center rounded-lg bg-muted px-3 py-1 text-center text-sm font-medium ease-in-out animate-in fade-in slide-in-from-bottom-4">
-      🎉 {count || "–––"} recipes generated and counting!
+      🎉 {count || "–––"} strategies generated and counting!
     </p>
   )
 }
